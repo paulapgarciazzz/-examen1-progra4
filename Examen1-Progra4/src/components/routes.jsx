@@ -8,7 +8,6 @@ import{
 
 import Home from './Home';
 import CarParts from './CarParts';
-import './App.css';
 
 const rootRoute = createRootRoute({
     component: function RootLayout(){
@@ -37,4 +36,4 @@ const repuestosRoute = createRoute({
     component: CarParts
 });
 const routeTree = rootRoute.addChildren([homeRoute, repuestosRoute]);
-export const router = createRouter(routeTree);
+export const router = createRouter({ routeTree });
